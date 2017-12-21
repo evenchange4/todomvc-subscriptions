@@ -1,0 +1,21 @@
+{
+  "private": true,
+  "name": "todomvc-subscriptions",
+  "version": "1.0.0",
+  "author": "Michael Hsu <evenchange4@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "format": "prettier --write 'src/**/*.{js,json}'"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "lerna": "^2.5.1",
+    "prettier": "^1.9.2"
+  },
+  "prettier": {
+    "trailingComma": "all",
+    "singleQuote": true
+  }
+}

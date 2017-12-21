@@ -1,0 +1,10 @@
+node_modules/
+.yarn-cache/
+
+# files
+npm-debug.log
+lerna-debug.log
+.DS_Store
+
+# jest
+coverage/
