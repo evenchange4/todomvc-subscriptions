@@ -246,8 +246,14 @@ declare module 'next/dist/server/utils' {
   declare module.exports: any;
 }
 
-declare module 'next/document' {
-  declare module.exports: any;
+declare module "next/document" {
+  declare export var Head: Class<React$Component<any, any>>;
+  declare export var Main: Class<React$Component<any, any>>;
+  declare export var NextScript: Class<React$Component<any, any>>;
+  declare export default Class<React$Component<any, any>> & {
+    getInitialProps: (ctx: { pathname: string, query: any, req?: any, res?: any, jsonPageRes?: any, err?: any }) => Promise<any>;
+    renderPage(cb: Function): void;
+  };
 }
 
 declare module 'next/dynamic' {

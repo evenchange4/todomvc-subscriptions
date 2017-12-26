@@ -30,7 +30,8 @@ function create(initialState, clientID) {
   const cache = new InMemoryCache({
     // Remind: We don't use typename as dataId to avoid different typename with same id
     // ref: https://github.com/apollographql/apollo-client/tree/master/packages/apollo-cache-inmemory
-    dataIdFromObject: obj => obj.id || obj.__typename, // TODO
+    // TODO
+    dataIdFromObject: obj => obj.id || obj.__typename, // eslint-disable-line
   }).restore(initialState || {});
 
   const httpLink = new HttpLink({

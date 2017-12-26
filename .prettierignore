@@ -6,3 +6,6 @@ packages/server/lib/
 
 # flow
 flow-typed/
+
+# test
+coverage/

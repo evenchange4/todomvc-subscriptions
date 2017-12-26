@@ -35,7 +35,7 @@ const TODO_FILTERS = {
   [SHOW_COMPLETED]: todo => todo.completed,
 };
 
-class MainSection extends Component<Props> {
+export class MainSection extends Component<Props> {
   componentDidMount() {
     const clientID = window.localStorage.getItem('apollo-client-id');
     this.props.subscribeTodoChanged(clientID);

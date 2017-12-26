@@ -1,24 +1,33 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+// @flow
+import * as React from 'react';
 import { ApolloProvider, getDataFromTree } from 'react-apollo';
 import Head from 'next/head';
 import initApollo from './initApollo';
 
+type Props = {|
+  serverState: {
+    apollo: {
+      data: any,
+    },
+  },
+|};
+type Ctx = {
+  asPath: string,
+  pathname: string,
+  query: string,
+};
+type Component = React.ComponentType<any>;
+
 // Gets the display name of a JSX component for dev tools
-function getComponentDisplayName(Component) {
-  return Component.displayName || Component.name || 'Unknown';
+function getComponentDisplayName(BaseComponent: Component): string {
+  return BaseComponent.displayName || BaseComponent.name || 'Unknown';
 }
 
-export default ComposedComponent =>
-  class WithData extends React.Component {
-    static displayName = `WithData(${getComponentDisplayName(
-      ComposedComponent,
-    )})`;
-    static propTypes = {
-      serverState: PropTypes.object.isRequired,
-    };
+export default (BaseComponent: Component) =>
+  class WithData extends React.Component<Props> {
+    static displayName = `WithData(${getComponentDisplayName(BaseComponent)})`;
 
-    static async getInitialProps(ctx) {
+    static async getInitialProps(ctx: Ctx) {
       // Initial serverState with apollo (empty)
       let serverState = {
         apollo: {
@@ -28,8 +37,8 @@ export default ComposedComponent =>
 
       // Evaluate the composed component's getInitialProps()
       let composedInitialProps = {};
-      if (ComposedComponent.getInitialProps) {
-        composedInitialProps = await ComposedComponent.getInitialProps(ctx);
+      if (BaseComponent.getInitialProps) {
+        composedInitialProps = await BaseComponent.getInitialProps(ctx);
       }
 
       // Run all GraphQL queries in the component tree
@@ -41,7 +50,7 @@ export default ComposedComponent =>
           // Run all GraphQL queries
           await getDataFromTree(
             <ApolloProvider client={apollo}>
-              <ComposedComponent {...composedInitialProps} />
+              <BaseComponent {...composedInitialProps} />
             </ApolloProvider>,
             {
               router: {
@@ -52,7 +61,7 @@ export default ComposedComponent =>
             },
           );
         } catch (error) {
-          console.log('getDataFromTree', { error });
+          console.log('getDataFromTree', { error }); // eslint-disable-line
           // Prevent Apollo Client GraphQL errors from crashing SSR.
           // Handle them in components via the data.error prop:
           // http://dev.apollodata.com/react/api-queries.html#graphql-query-data-error
@@ -75,7 +84,7 @@ export default ComposedComponent =>
       };
     }
 
-    constructor(props) {
+    constructor(props: Props) {
       super(props);
       this.apollo = initApollo(this.props.serverState.apollo.data);
     }
@@ -83,7 +92,7 @@ export default ComposedComponent =>
     render() {
       return (
         <ApolloProvider client={this.apollo}>
-          <ComposedComponent {...this.props} />
+          <BaseComponent {...this.props} />
         </ApolloProvider>
       );
     }

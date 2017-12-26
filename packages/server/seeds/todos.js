@@ -2,10 +2,6 @@ exports.seed = function seed(knex, Promise) {
   return Promise.all([knex('todos').del()]).then(() =>
     knex('todos').insert([
       {
-        title: 'micro-proxy',
-        completed: false,
-      },
-      {
         title: 'Apollo Client 2.0',
         completed: true,
       },
@@ -16,6 +12,14 @@ exports.seed = function seed(knex, Promise) {
       {
         title: 'Graphql-yoga',
         completed: true,
+      },
+      {
+        title: 'Docker and pkg',
+        completed: true,
+      },
+      {
+        title: 'micro-proxy',
+        completed: false,
       },
     ]),
   );

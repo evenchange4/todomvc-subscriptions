@@ -37,11 +37,11 @@
     "parser": "babel-eslint",
     "extends": [
       "airbnb",
+      "plugin:flowtype/recommended",
+      "plugin:jest/recommended",
       "prettier",
       "prettier/react",
-      "prettier/flowtype",
-      "plugin:flowtype/recommended",
-      "plugin:jest/recommended"
+      "prettier/flowtype"
     ],
     "plugins": ["prettier", "jest", "flowtype"],
     "env": {
@@ -49,6 +49,7 @@
     },
     "rules": {
       "prettier/prettier": "error",
+      "import/no-named-as-default": 0,
       "react/jsx-filename-extension": [
         1,
         {

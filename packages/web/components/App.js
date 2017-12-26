@@ -5,8 +5,20 @@ import MainSection from './MainSection';
 
 const App = () => (
   <div>
-    <Header />
-    <MainSection />
+    <div className="todoapp">
+      <Header />
+      <MainSection />
+    </div>
+
+    <footer className="info">
+      <p>Double-click to edit a todo</p>
+      <p>
+        Created by{' '}
+        <a href="https://github.com/evenchange4/todomvc-subscriptions">
+          Michael Hsu
+        </a>
+      </p>
+    </footer>
   </div>
 );
 

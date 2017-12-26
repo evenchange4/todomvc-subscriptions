@@ -15,8 +15,6 @@ $ npm start
 ### Deploy to Now.sh
 ```cmd
 # deploy
-$ npm run pkg
-
 $ now switch todomvc
 $ now deploy
 $ now alias

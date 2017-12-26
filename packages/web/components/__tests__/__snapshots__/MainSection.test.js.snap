@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should shallow render <MainSection /> correctly 1`] = `
+<section
+  className="main"
+>
+  <span>
+    <input
+      checked={true}
+      className="toggle-all"
+      type="checkbox"
+    />
+    <label
+      onClick={[Function]}
+    />
+  </span>
+  <ul
+    className="todo-list"
+  />
+  <withUpdateFilter(withDeleteTodos(Footer))
+    completedTodos={Array []}
+    filter="SHOW_ALL"
+    todoLength={0}
+  />
+</section>
+`;
+
+exports[`should shallow render <MainSection /> correctly 2`] = `
+[MockFunction] {
+  "calls": Array [
+    Array [
+      "apollo-client-id",
+    ],
+  ],
+}
+`;
