@@ -1,18 +1,15 @@
 node_modules/
 .yarn-cache/
 
-# files
-npm-debug.log
-lerna-debug.log
-.DS_Store
-
 # jest
 coverage/
 
 # server
-packages/server/*.sqlite3
 packages/server/lib/
 packages/server/pkg/
 
 # web
 .next
+
+# flow
+flow-typed/

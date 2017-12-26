@@ -5,17 +5,55 @@
   "author": "Michael Hsu <evenchange4@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "format": "prettier --write 'src/**/*.{js,json}'"
+    "clean":
+      "rm -rf node_modules && rm -rf ./packages/*/node_modules && rm -rf ./packages/*/.DS_Store && rm -rf ./packages/*/*.log",
+    "postinstall": "lerna link",
+    "flow": "flow",
+    "eslint": "eslint ./",
+    "format": "prettier --write 'packages/**/*.{js,json}' '*.json' '*.md'"
   },
-  "workspaces": [
-    "packages/*"
-  ],
+  "workspaces": ["packages/*"],
   "devDependencies": {
+    "babel-eslint": "^8.1.2",
+    "eslint": "^4.14.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-flowtype": "^2.40.1",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jest": "^21.5.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-prettier": "^2.4.0",
+    "eslint-plugin-react": "^7.5.1",
+    "flow-bin": "^0.61.0",
     "lerna": "^2.5.1",
     "prettier": "^1.9.2"
   },
   "prettier": {
     "trailingComma": "all",
     "singleQuote": true
+  },
+  "eslintConfig": {
+    "parser": "babel-eslint",
+    "extends": [
+      "airbnb",
+      "prettier",
+      "prettier/react",
+      "prettier/flowtype",
+      "plugin:flowtype/recommended",
+      "plugin:jest/recommended"
+    ],
+    "plugins": ["prettier", "jest", "flowtype"],
+    "env": {
+      "jest/globals": true
+    },
+    "rules": {
+      "prettier/prettier": "error",
+      "react/jsx-filename-extension": [
+        1,
+        {
+          "extensions": [".js"]
+        }
+      ]
+    }
   }
 }

@@ -1,0 +1,8 @@
+# server
+packages/server/lib/
+
+# web
+.next
+
+# flow
+flow-typed/
