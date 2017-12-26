@@ -34,7 +34,7 @@ function create(initialState, clientID) {
   }).restore(initialState || {});
 
   const httpLink = new HttpLink({
-    uri: 'http://localhost:4000', // Server URL (must be absolute)
+    uri: process.env.API_DOMAIN, // Server URL (must be absolute)
     credentials: 'same-origin', // Additional fetch() options like `credentials` or `headers`
     headers: {
       'Apollo-Client-ID': clientID,
@@ -48,7 +48,7 @@ function create(initialState, clientID) {
 
   let link;
   if (process.browser) {
-    const wsClient = new SubscriptionClient('ws://localhost:4000/', {
+    const wsClient = new SubscriptionClient(process.env.WEBSOCKET_DOMAIN, {
       reconnect: true,
     });
     const wsLink = new WebSocketLink(wsClient);
@@ -56,7 +56,6 @@ function create(initialState, clientID) {
       // split based on operation type
       ({ query }) => {
         const { kind, operation } = getMainDefinition(query);
-        console.log('getMainDefinition', getMainDefinition(query));
         return kind === 'OperationDefinition' && operation === 'subscription';
       },
       wsLink,

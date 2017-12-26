@@ -1,14 +1,20 @@
 {
+  "private": true,
   "name": "@todomvc-subscriptions/web",
   "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
-  "private": true,
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start",
-    "flow": "flow"
+    "start": "next start"
+  },
+  "engines": {
+    "node": "^9.0.0"
+  },
+  "now": {
+    "name": "todomvc-web",
+    "alias": "todomvc-web",
+    "type": "npm",
+    "dotenv": ".env.nowsh"
   },
   "dependencies": {
     "@todomvc-subscriptions/constants": "^1.0.0",
@@ -19,6 +25,8 @@
     "apollo-link-state": "^0.3.0",
     "apollo-link-ws": "^1.0.4",
     "apollo-utilities": "^1.0.3",
+    "babel-plugin-inline-dotenv": "^1.1.2",
+    "babel-plugin-transform-inline-environment-variables": "^0.2.0",
     "classnames": "^2.2.5",
     "graphql": "^0.12.3",
     "graphql-tag": "^2.6.1",
@@ -33,5 +41,22 @@
   },
   "devDependencies": {
     "flow-bin": "^0.61.0"
+  },
+  "babel": {
+    "presets": [
+      "next/babel"
+    ],
+    "env": {
+      "development": {
+        "plugins": [
+          "inline-dotenv"
+        ]
+      },
+      "production": {
+        "plugins": [
+          "transform-inline-environment-variables"
+        ]
+      }
+    }
   }
 }

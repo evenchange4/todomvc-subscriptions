@@ -19,7 +19,6 @@ export default ComposedComponent =>
     };
 
     static async getInitialProps(ctx) {
-      console.log('getInitialProps');
       // Initial serverState with apollo (empty)
       let serverState = {
         apollo: {
@@ -36,10 +35,7 @@ export default ComposedComponent =>
       // Run all GraphQL queries in the component tree
       // and extract the resulting data
       if (!process.browser) {
-        // console.log('in Server')
-
         const apollo = initApollo();
-        // console.log({ apollo })
 
         try {
           // Run all GraphQL queries
@@ -56,7 +52,7 @@ export default ComposedComponent =>
             },
           );
         } catch (error) {
-          // console.log('getDataFromTree', { error });
+          console.log('getDataFromTree', { error });
           // Prevent Apollo Client GraphQL errors from crashing SSR.
           // Handle them in components via the data.error prop:
           // http://dev.apollodata.com/react/api-queries.html#graphql-query-data-error
@@ -71,8 +67,6 @@ export default ComposedComponent =>
             data: apollo.cache.extract(),
           },
         };
-
-        // console.log({ serverState })
       }
 
       return {
@@ -83,9 +77,7 @@ export default ComposedComponent =>
 
     constructor(props) {
       super(props);
-      // console.log('constructor', this.props.serverState)
       this.apollo = initApollo(this.props.serverState.apollo.data);
-      // console.log('constructor', this.props.serverState.apollo.data)
     }
 
     render() {

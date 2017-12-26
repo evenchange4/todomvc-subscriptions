@@ -1,26 +1,30 @@
 {
+  "private": true,
   "name": "@todomvc-subscriptions/server",
   "version": "1.0.0",
-  "description": "",
-  "author": "Michael Hsu <evenchange4@gmail.com>",
-  "license": "MIT",
-  "bin": "bin/server.js",
+  "bin": "lib/index.js",
+  "pkg": {
+    "assets": ["migrations/**", "seeds/**"],
+    "scripts": "lib/**/*.js"
+  },
   "scripts-info": {
-    "knex": "ES6 CLI",
-    "migrate": "Database migrate",
-    "seed": "Database seed",
-    "start": "Livereload Dev server",
-    "build": "Build CJS package with babel",
+    "dev": "[Development] Livereload Dev server",
+    "build": "[Production] Build CJS with babel",
+    "start": "[Production] production server",
     "pkg": "Binary file for production"
   },
   "scripts": {
-    "knex": "babel-node node_modules/.bin/knex",
-    "migrate": "npm run knex -- migrate:latest --env production",
-    "seed": "npm run knex -- seed:run  --env production",
-    "start": "nodemon src/index.js --watch src --exec babel-node",
-    "build": "rm -rf lib && babel src -d lib --ignore __tests__",
+    "dev": "nodemon src/index.js --watch src --exec babel-node",
+    "build":
+      "rm -rf lib && NODE_ENV='production' babel src -d lib --ignore __tests__",
+    "start": "node ./lib/index.js",
     "pkg":
-      "rm -rf pkg && pkg . --debug --targets node9-linux-x64,node9-macos-x64 --out-path pkg"
+      "npm run build && rm -rf pkg && pkg . --targets node9-linux-x64,node9-macos-x64 --out-path pkg"
+  },
+  "now": {
+    "name": "todomvc-server",
+    "alias": "todomvc-server",
+    "type": "docker"
   },
   "dependencies": {
     "@todomvc-subscriptions/constants": "^1.0.0",
@@ -39,10 +43,6 @@
     "flow-bin": "^0.61.0",
     "nodemon": "^1.14.3",
     "pkg": "^4.3.0-beta.5"
-  },
-  "pkg": {
-    "assets": ["migrations/**", "seeds/**"],
-    "scripts": "lib/**/*.js"
   },
   "babel": {
     "presets": [

@@ -10,7 +10,8 @@
     "postinstall": "lerna link",
     "flow": "flow",
     "eslint": "eslint ./",
-    "format": "prettier --write 'packages/**/*.{js,json}' '*.json' '*.md'"
+    "format": "prettier --write 'packages/**/*.{js,json}' '*.json' '*.md'",
+    "release": "lerna publish"
   },
   "workspaces": ["packages/*"],
   "devDependencies": {
