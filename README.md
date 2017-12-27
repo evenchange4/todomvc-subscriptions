@@ -2,6 +2,10 @@
 
 > Full-stack TodoMVC with GraphQL subscriptions.
 
+[![Travis][travis-badge]][travis]
+[![Codecov Status][codecov-badge]][codecov]
+[![license][license-badge]][license]
+
 ## Demos
 
 * Server: [todomvc-server.now.sh](https://todomvc-server.now.sh/)
@@ -17,7 +21,6 @@ Looking for a modern technology stack for my next project in 2018. Any suggestio
 
 ## Todo
 
-* [ ] CI
 * [ ] jest
 * [ ] Integration test
 
@@ -32,3 +35,22 @@ Looking for a modern technology stack for my next project in 2018. Any suggestio
 * [GitHunt-React](https://github.com/apollographql/GitHunt-React/tree/master)
 * [graphql-boilerplates/react-fullstack-graphql](https://github.com/graphql-boilerplates/react-fullstack-graphql)
 * [Testing React Apollo components with Enzyme](https://paradite.com/2017/11/16/test-react-apollo-components-enzyme-examples/)
+
+## CONTRIBUTING
+
+* ⇄ Pull requests and ★ Stars are always welcome.
+* For bugs and feature requests, please create an issue.
+* Pull requests must be accompanied by passing automated tests.
+
+## [CHANGELOG](CHANGELOG.md)
+
+## [LICENSE](LICENSE)
+
+MIT: [http://michaelhsu.mit-license.org](http://michaelhsu.mit-license.org)
+
+[travis-badge]: https://img.shields.io/travis/evenchange4/todomvc-subscriptions/master.svg?style=flat-square
+[travis]: https://travis-ci.org/evenchange4/todomvc-subscriptions
+[codecov-badge]: https://img.shields.io/codecov/c/github/evenchange4/todomvc-subscriptions.svg?style=flat-square
+[codecov]: https://codecov.io/github/evenchange4/todomvc-subscriptions?branch=master
+[license-badge]: https://img.shields.io/github/license/evenchange4/micro-website-api.svg?style=flat-square
+[license]: http://michaelhsu.mit-license.org/
