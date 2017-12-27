@@ -5,7 +5,8 @@
   "author": "Michael Hsu <evenchange4@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "clean": "rm -rf node_modules && rm -rf ./packages/*/node_modules && rm -rf ./packages/*/.DS_Store && rm -rf ./packages/*/*.log",
+    "clean":
+      "rm -rf node_modules && rm -rf ./packages/*/node_modules && rm -rf ./packages/*/.DS_Store && rm -rf ./packages/*/*.log",
     "postinstall": "lerna link",
     "flow": "flow",
     "eslint": "eslint ./",
@@ -13,9 +14,7 @@
     "release": "lerna publish",
     "changelog": "lerna-changelog"
   },
-  "workspaces": [
-    "packages/*"
-  ],
+  "workspaces": ["packages/*"],
   "devDependencies": {
     "babel-eslint": "^8.1.2",
     "eslint": "^4.14.0",
@@ -46,11 +45,7 @@
       "prettier/react",
       "prettier/flowtype"
     ],
-    "plugins": [
-      "prettier",
-      "jest",
-      "flowtype"
-    ],
+    "plugins": ["prettier", "jest", "flowtype"],
     "env": {
       "jest/globals": true
     },
@@ -60,9 +55,7 @@
       "react/jsx-filename-extension": [
         1,
         {
-          "extensions": [
-            ".js"
-          ]
+          "extensions": [".js"]
         }
       ]
     }
