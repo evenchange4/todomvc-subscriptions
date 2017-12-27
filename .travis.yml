@@ -18,7 +18,7 @@ install:
 
 script:
   - yarn run eslint
-  - cd packages/web && yarn run test
+  - ./node_modules/.bin/lerna run test
   # - yarn run flow
 
 after_success:
