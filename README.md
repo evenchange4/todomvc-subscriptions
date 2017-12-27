@@ -9,9 +9,11 @@
 
 ## Why
 
-Looking forward to a modern technology stack for my next project in 2018. Any suggestions are welcomed!
+Looking for a modern technology stack for my next project in 2018. Any suggestions are welcomed!
 
 ## Technology Stack
+
+![techstack](./docs/techstack.png)
 
 ## Todo
 
