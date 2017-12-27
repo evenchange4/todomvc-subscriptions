@@ -5,5 +5,6 @@ COPY pkg/server-linux .
 RUN ls
 CMD ./server-linux
 ENV PORT=4000
-EXPOSE $PORT
+ENV PROXY_PORT=4001
+EXPOSE $PROXY_PORT
 CMD ./server-linux

@@ -28,6 +28,8 @@
   },
   "dependencies": {
     "@todomvc-subscriptions/constants": "^1.0.0",
+    "apollo-engine": "^0.8.1",
+    "compression": "^1.7.1",
     "dotenv": "^4.0.0",
     "graphql-yoga": "^0.4.7",
     "knex": "^0.14.2",
