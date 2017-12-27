@@ -2492,9 +2492,9 @@ create-hmac@^1.1.0, create-hmac@^1.1.2, create-hmac@^1.1.4:
     safe-buffer "^5.0.1"
     sha.js "^2.4.8"
 
-cross-fetch@0.0.8:
-  version "0.0.8"
-  resolved "https://registry.yarnpkg.com/cross-fetch/-/cross-fetch-0.0.8.tgz#01ed94dc407df2c00f1807fde700a7cfa48a205c"
+cross-fetch@1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/cross-fetch/-/cross-fetch-1.1.1.tgz#dede6865ae30f37eae62ac90ebb7bdac002b05a0"
   dependencies:
     node-fetch "1.7.3"
     whatwg-fetch "2.0.3"
@@ -4056,8 +4056,8 @@ graphql-config-extension-graphcool@^0.2.0:
     graphql-config "^1.1.1"
 
 graphql-config@^1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/graphql-config/-/graphql-config-1.1.1.tgz#40f22d4845ee629d3344b31c4c9db8f695ddcad5"
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/graphql-config/-/graphql-config-1.1.2.tgz#fdb49dcf6543eb2ce17072a306d2700e04f16adc"
   dependencies:
     graphql "^0.12.3"
     graphql-import "^0.1.7"
@@ -4104,10 +4104,10 @@ graphql-playground-middleware@^1.2.1-beta.6:
     find-up "^2.1.0"
 
 graphql-request@^1.4.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/graphql-request/-/graphql-request-1.4.0.tgz#f5b067c83070296d93fb45760e83dfad0d9f537a"
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/graphql-request/-/graphql-request-1.4.1.tgz#0772743cfac8dfdd4d69d36106a96c9bdd191ce8"
   dependencies:
-    cross-fetch "0.0.8"
+    cross-fetch "1.1.1"
 
 graphql-subscriptions@^0.5.6:
   version "0.5.6"
@@ -4128,9 +4128,9 @@ graphql-tools@^2.14.0, graphql-tools@^2.14.1:
     deprecated-decorator "^0.1.6"
     uuid "^3.1.0"
 
-graphql-yoga@^0.4.6:
-  version "0.4.6"
-  resolved "https://registry.yarnpkg.com/graphql-yoga/-/graphql-yoga-0.4.6.tgz#1cd3172dc256f44cfa42234f6c6d6e13286b689f"
+graphql-yoga@^0.4.7:
+  version "0.4.7"
+  resolved "https://registry.yarnpkg.com/graphql-yoga/-/graphql-yoga-0.4.7.tgz#8ba2ef0c6229b52041b5d419f4b5da74bf6ded5d"
   dependencies:
     "@types/cors" "^2.8.3"
     "@types/express" "^4.0.39"
@@ -6532,7 +6532,7 @@ pg-connection-string@2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/pg-connection-string/-/pg-connection-string-2.0.0.tgz#3eefe5997e06d94821e4d502e42b6a1c73f8df82"
 
-pify@^2.0.0, pify@^2.2.0, pify@^2.3.0:
+pify@^2.0.0, pify@^2.3.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/pify/-/pify-2.3.0.tgz#ed141a6ac043a849ea588498e7dca8b15330e90c"
 
@@ -7883,13 +7883,13 @@ temp-dir@^1.0.0:
   resolved "https://registry.yarnpkg.com/temp-dir/-/temp-dir-1.0.0.tgz#0a7c0ea26d3a39afa7e0ebea9c1fc0bc4daa011d"
 
 temp-write@^3.3.0:
-  version "3.3.0"
-  resolved "https://registry.yarnpkg.com/temp-write/-/temp-write-3.3.0.tgz#c1a96de2b36061342eae81f44ff001aec8f615a9"
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/temp-write/-/temp-write-3.4.0.tgz#8cff630fb7e9da05f047c74ce4ce4d685457d492"
   dependencies:
     graceful-fs "^4.1.2"
     is-stream "^1.1.0"
     make-dir "^1.0.0"
-    pify "^2.2.0"
+    pify "^3.0.0"
     temp-dir "^1.0.0"
     uuid "^3.0.1"
 

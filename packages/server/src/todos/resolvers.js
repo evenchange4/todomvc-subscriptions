@@ -1,4 +1,4 @@
-import { withFilter } from 'graphql-subscriptions';
+import { withFilter } from 'graphql-yoga';
 import * as R from 'ramda';
 import ACTIONS from '@todomvc-subscriptions/constants/actions';
 
