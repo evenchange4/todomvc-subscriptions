@@ -2,6 +2,9 @@
 import * as React from 'react';
 import Header from './Header';
 import MainSection from './MainSection';
+import autotrack from '../lib/autotrack';
+
+if (process.browser) autotrack(process.env.GA_ID);
 
 const App = () => (
   <div>

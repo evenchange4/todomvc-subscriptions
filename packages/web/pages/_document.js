@@ -8,6 +8,10 @@ export default class MyDocument extends Document {
         <Head>
           <title>TodoMVC • Subscriptions</title>
           <meta
+            name="google-site-verification"
+            content="Odkl7dQq7uRdS1wDgqodMfkMS1MBXqkeA6bxvlIROPk"
+          />
+          <meta
             name="description"
             content="Fullstack TodoMVC with GraphQL subscriptions."
           />
@@ -20,6 +24,9 @@ export default class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
+
+          <script async src="https://www.google-analytics.com/analytics.js" />
+          <script async src="https://unpkg.com/autotrack/autotrack.js" />
         </body>
       </html>
     );
