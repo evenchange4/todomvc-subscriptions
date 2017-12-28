@@ -2,7 +2,7 @@
 # yarn lockfile v1
 
 
-"@babel/cli@^7.0.0-beta.36":
+"@babel/cli@7.0.0-beta.36":
   version "7.0.0-beta.36"
   resolved "https://registry.yarnpkg.com/@babel/cli/-/cli-7.0.0-beta.36.tgz#6337a5f1b031778b0f40fe772f0fa62eb7a3b25e"
   dependencies:
@@ -33,7 +33,7 @@
     esutils "^2.0.2"
     js-tokens "^3.0.0"
 
-"@babel/core@^7.0.0-beta.36":
+"@babel/core@7.0.0-beta.36":
   version "7.0.0-beta.36"
   resolved "https://registry.yarnpkg.com/@babel/core/-/core-7.0.0-beta.36.tgz#2f9dbcc64b998a5534b3458c45d5477d78dc0382"
   dependencies:
@@ -206,7 +206,7 @@
     "@babel/traverse" "7.0.0-beta.36"
     "@babel/types" "7.0.0-beta.36"
 
-"@babel/node@^7.0.0-beta.36":
+"@babel/node@7.0.0-beta.36":
   version "7.0.0-beta.36"
   resolved "https://registry.yarnpkg.com/@babel/node/-/node-7.0.0-beta.36.tgz#4626995d10284ce24b7aaac7aea34ae6986fb024"
   dependencies:
@@ -417,7 +417,7 @@
     core-js "^2.4.0"
     regenerator-runtime "^0.11.1"
 
-"@babel/preset-env@^7.0.0-beta.36":
+"@babel/preset-env@7.0.0-beta.36":
   version "7.0.0-beta.36"
   resolved "https://registry.yarnpkg.com/@babel/preset-env/-/preset-env-7.0.0-beta.36.tgz#73a2cc5db2534d0f4c557cef1baaf622555146dc"
   dependencies:
@@ -792,7 +792,7 @@ apollo-cache-control@^0.0.x:
   dependencies:
     graphql-extensions "^0.0.x"
 
-apollo-cache-inmemory@^1.1.4:
+apollo-cache-inmemory@1.1.4:
   version "1.1.4"
   resolved "https://registry.yarnpkg.com/apollo-cache-inmemory/-/apollo-cache-inmemory-1.1.4.tgz#63485b18f56f9ceb912df235b42959e890c89747"
   dependencies:
@@ -806,9 +806,9 @@ apollo-cache@^1.0.2:
   dependencies:
     apollo-utilities "^1.0.3"
 
-apollo-client@^2.0.4:
-  version "2.0.4"
-  resolved "https://registry.yarnpkg.com/apollo-client/-/apollo-client-2.0.4.tgz#425c2944e068602b4e002b3f1ad08ddd893f1a0c"
+apollo-client@2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/apollo-client/-/apollo-client-2.1.0.tgz#1d3716cb5d4ad70c3a4147da629fdfcb53925e7b"
   dependencies:
     "@types/zen-observable" "^0.5.3"
     apollo-cache "^1.0.2"
@@ -826,32 +826,32 @@ apollo-link-dedup@^1.0.0:
   dependencies:
     apollo-link "^1.0.7"
 
-apollo-link-http@^1.3.2:
+apollo-link-http@1.3.2:
   version "1.3.2"
   resolved "https://registry.yarnpkg.com/apollo-link-http/-/apollo-link-http-1.3.2.tgz#63537ee5ecf9c004efb0317f1222b7dbc6f21559"
   dependencies:
     apollo-link "^1.0.7"
 
-apollo-link-schema@^1.0.1:
+apollo-link-schema@1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/apollo-link-schema/-/apollo-link-schema-1.0.1.tgz#d9db6343b1512373cc847188b5fb8708abd6235a"
   dependencies:
     apollo-link "^1.0.6"
 
-apollo-link-state@^0.3.0:
+apollo-link-state@0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/apollo-link-state/-/apollo-link-state-0.3.0.tgz#201197ff29a9168134c0754889f443de9917ae89"
   dependencies:
     apollo-utilities "^1.0.1"
     graphql-anywhere "^4.1.0-alpha.0"
 
-apollo-link-ws@^1.0.4:
+apollo-link-ws@1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/apollo-link-ws/-/apollo-link-ws-1.0.4.tgz#d0067aa0204470dbd3955aa5204f8dd72d389350"
   dependencies:
     apollo-link "^1.0.7"
 
-apollo-link@^1.0.0, apollo-link@^1.0.6, apollo-link@^1.0.7:
+apollo-link@1.0.7, apollo-link@^1.0.0, apollo-link@^1.0.6, apollo-link@^1.0.7:
   version "1.0.7"
   resolved "https://registry.yarnpkg.com/apollo-link/-/apollo-link-1.0.7.tgz#42cd38a7378332fc3e41a214ff6a6e5e703a556f"
   dependencies:
@@ -891,7 +891,7 @@ apollo-upload-server@^4.0.0-alpha.1:
     busboy "^0.2.14"
     object-path "^0.11.4"
 
-apollo-utilities@^1.0.0, apollo-utilities@^1.0.1, apollo-utilities@^1.0.3:
+apollo-utilities@1.0.3, apollo-utilities@^1.0.0, apollo-utilities@^1.0.1, apollo-utilities@^1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/apollo-utilities/-/apollo-utilities-1.0.3.tgz#bf435277609850dd442cf1d5c2e8bc6655eaa943"
 
@@ -1101,7 +1101,7 @@ babel-core@6.26.0, babel-core@^6.0.0, babel-core@^6.26.0:
     slash "^1.0.0"
     source-map "^0.5.6"
 
-babel-eslint@^8.1.2:
+babel-eslint@8.1.2:
   version "8.1.2"
   resolved "https://registry.yarnpkg.com/babel-eslint/-/babel-eslint-8.1.2.tgz#a39230b0c20ecbaa19a35d5633bf9b9ca2c8116f"
   dependencies:
@@ -1255,7 +1255,7 @@ babel-messages@^6.23.0:
   dependencies:
     babel-runtime "^6.22.0"
 
-babel-plugin-add-module-exports@^0.2.1:
+babel-plugin-add-module-exports@0.2.1:
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/babel-plugin-add-module-exports/-/babel-plugin-add-module-exports-0.2.1.tgz#9ae9a1f4a8dc67f0cdec4f4aeda1e43a5ff65e25"
 
@@ -1265,7 +1265,7 @@ babel-plugin-check-es2015-constants@^6.22.0:
   dependencies:
     babel-runtime "^6.22.0"
 
-babel-plugin-inline-dotenv@^1.1.2:
+babel-plugin-inline-dotenv@1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/babel-plugin-inline-dotenv/-/babel-plugin-inline-dotenv-1.1.2.tgz#d9b43f48b1471506bdc5fe571a067472f16aedf6"
   dependencies:
@@ -1527,7 +1527,7 @@ babel-plugin-transform-flow-strip-types@^6.22.0:
     babel-plugin-syntax-flow "^6.18.0"
     babel-runtime "^6.22.0"
 
-babel-plugin-transform-inline-environment-variables@^0.2.0:
+babel-plugin-transform-inline-environment-variables@0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-transform-inline-environment-variables/-/babel-plugin-transform-inline-environment-variables-0.2.0.tgz#37dad411a819667fd69c33e72f7a14ea1a50ba98"
 
@@ -2139,7 +2139,7 @@ circular-json@^0.3.1:
   version "0.3.3"
   resolved "https://registry.yarnpkg.com/circular-json/-/circular-json-0.3.3.tgz#815c99ea84f6809529d2f45791bdf82711352d66"
 
-classnames@^2.2.5:
+classnames@2.2.5:
   version "2.2.5"
   resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.2.5.tgz#fb3801d453467649ef3603c7d61a02bd129bde6d"
 
@@ -2207,7 +2207,7 @@ codeclimate-test-reporter@^0.5.0:
     lcov-parse "0.0.10"
     request "~2.79.0"
 
-codecov@^3.0.0:
+codecov@3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/codecov/-/codecov-3.0.0.tgz#c273b8c4f12945723e8dc9d25803d89343e5f28e"
   dependencies:
@@ -2886,7 +2886,7 @@ dot-prop@^4.1.0:
   dependencies:
     is-obj "^1.0.0"
 
-dotenv@^4.0.0:
+dotenv@4.0.0, dotenv@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-4.0.0.tgz#864ef1379aced55ce6f95debecdce179f7a0cd1d"
 
@@ -2987,7 +2987,7 @@ entities@^1.1.1, entities@~1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/entities/-/entities-1.1.1.tgz#6e5c2d0a5621b5dadaecef80b90edfb5cd7772f0"
 
-enzyme-adapter-react-16@^1.1.1:
+enzyme-adapter-react-16@1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/enzyme-adapter-react-16/-/enzyme-adapter-react-16-1.1.1.tgz#a8f4278b47e082fbca14f5bfb1ee50ee650717b4"
   dependencies:
@@ -3007,13 +3007,13 @@ enzyme-adapter-utils@^1.3.0:
     object.assign "^4.0.4"
     prop-types "^15.6.0"
 
-enzyme-to-json@^3.3.0:
+enzyme-to-json@3.3.0:
   version "3.3.0"
   resolved "https://registry.yarnpkg.com/enzyme-to-json/-/enzyme-to-json-3.3.0.tgz#553e23a09ffb4b0cf09287e2edf9c6539fddaa84"
   dependencies:
     lodash "^4.17.4"
 
-enzyme@^3.2.0:
+enzyme@3.2.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/enzyme/-/enzyme-3.2.0.tgz#998bdcda0fc71b8764a0017f7cc692c943f54a7a"
   dependencies:
@@ -3182,13 +3182,13 @@ eslint-config-airbnb-base@^12.1.0:
   dependencies:
     eslint-restricted-globals "^0.1.1"
 
-eslint-config-airbnb@^16.1.0:
+eslint-config-airbnb@16.1.0:
   version "16.1.0"
   resolved "https://registry.yarnpkg.com/eslint-config-airbnb/-/eslint-config-airbnb-16.1.0.tgz#2546bfb02cc9fe92284bf1723ccf2e87bc45ca46"
   dependencies:
     eslint-config-airbnb-base "^12.1.0"
 
-eslint-config-prettier@^2.9.0:
+eslint-config-prettier@2.9.0:
   version "2.9.0"
   resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-2.9.0.tgz#5ecd65174d486c22dff389fe036febf502d468a3"
   dependencies:
@@ -3208,13 +3208,13 @@ eslint-module-utils@^2.1.1:
     debug "^2.6.8"
     pkg-dir "^1.0.0"
 
-eslint-plugin-flowtype@^2.40.1:
+eslint-plugin-flowtype@2.40.1:
   version "2.40.1"
   resolved "https://registry.yarnpkg.com/eslint-plugin-flowtype/-/eslint-plugin-flowtype-2.40.1.tgz#f78a8e6a4cc6da831dd541eb61e803ff0279b796"
   dependencies:
     lodash "^4.15.0"
 
-eslint-plugin-import@^2.8.0:
+eslint-plugin-import@2.8.0:
   version "2.8.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-import/-/eslint-plugin-import-2.8.0.tgz#fa1b6ef31fcb3c501c09859c1b86f1fc5b986894"
   dependencies:
@@ -3229,11 +3229,11 @@ eslint-plugin-import@^2.8.0:
     minimatch "^3.0.3"
     read-pkg-up "^2.0.0"
 
-eslint-plugin-jest@^21.5.0:
+eslint-plugin-jest@21.5.0:
   version "21.5.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-jest/-/eslint-plugin-jest-21.5.0.tgz#c7a3bd2ee9d1c832b4e31dec89f6ad93e08d4853"
 
-eslint-plugin-jsx-a11y@^6.0.3:
+eslint-plugin-jsx-a11y@6.0.3:
   version "6.0.3"
   resolved "https://registry.yarnpkg.com/eslint-plugin-jsx-a11y/-/eslint-plugin-jsx-a11y-6.0.3.tgz#54583d1ae442483162e040e13cc31865465100e5"
   dependencies:
@@ -3245,14 +3245,14 @@ eslint-plugin-jsx-a11y@^6.0.3:
     emoji-regex "^6.1.0"
     jsx-ast-utils "^2.0.0"
 
-eslint-plugin-prettier@^2.4.0:
+eslint-plugin-prettier@2.4.0:
   version "2.4.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-prettier/-/eslint-plugin-prettier-2.4.0.tgz#85cab0775c6d5e3344ef01e78d960f166fb93aae"
   dependencies:
     fast-diff "^1.1.1"
     jest-docblock "^21.0.0"
 
-eslint-plugin-react@^7.5.1:
+eslint-plugin-react@7.5.1:
   version "7.5.1"
   resolved "https://registry.yarnpkg.com/eslint-plugin-react/-/eslint-plugin-react-7.5.1.tgz#52e56e8d80c810de158859ef07b880d2f56ee30b"
   dependencies:
@@ -3276,7 +3276,7 @@ eslint-visitor-keys@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/eslint-visitor-keys/-/eslint-visitor-keys-1.0.0.tgz#3f3180fb2e291017716acb4c9d6d5b5c34a6a81d"
 
-eslint@^4.14.0:
+eslint@4.14.0:
   version "4.14.0"
   resolved "https://registry.yarnpkg.com/eslint/-/eslint-4.14.0.tgz#96609768d1dd23304faba2d94b7fefe5a5447a82"
   dependencies:
@@ -3686,7 +3686,7 @@ flat-cache@^1.2.1:
     graceful-fs "^4.1.2"
     write "^0.2.1"
 
-flow-bin@^0.61.0:
+flow-bin@0.61.0:
   version "0.61.0"
   resolved "https://registry.yarnpkg.com/flow-bin/-/flow-bin-0.61.0.tgz#d0473a8c35dbbf4de573823f4932124397d32d35"
 
@@ -4229,11 +4229,11 @@ graphql-subscriptions@^0.5.6:
     es6-promise "^4.1.1"
     iterall "^1.1.3"
 
-graphql-tag@^2.6.1:
+graphql-tag@2.6.1:
   version "2.6.1"
   resolved "https://registry.yarnpkg.com/graphql-tag/-/graphql-tag-2.6.1.tgz#4788d509f6e29607d947fc47a40c4e18f736d34a"
 
-graphql-tools@^2.14.0, graphql-tools@^2.14.1:
+graphql-tools@2.14.1, graphql-tools@^2.14.0:
   version "2.14.1"
   resolved "https://registry.yarnpkg.com/graphql-tools/-/graphql-tools-2.14.1.tgz#15f96683d7f178042baddcfc17d73dcfeee67356"
   dependencies:
@@ -4241,7 +4241,7 @@ graphql-tools@^2.14.0, graphql-tools@^2.14.1:
     deprecated-decorator "^0.1.6"
     uuid "^3.1.0"
 
-graphql-yoga@^0.4.7:
+graphql-yoga@0.4.7:
   version "0.4.7"
   resolved "https://registry.yarnpkg.com/graphql-yoga/-/graphql-yoga-0.4.7.tgz#8ba2ef0c6229b52041b5d419f4b5da74bf6ded5d"
   dependencies:
@@ -4261,7 +4261,7 @@ graphql-yoga@^0.4.7:
     portfinder "^1.0.13"
     subscriptions-transport-ws "^0.9.4"
 
-graphql@^0.12.0, graphql@^0.12.3:
+graphql@0.12.3, graphql@^0.12.0, graphql@^0.12.3:
   version "0.12.3"
   resolved "https://registry.yarnpkg.com/graphql/-/graphql-0.12.3.tgz#11668458bbe28261c0dcb6e265f515ba79f6ce07"
   dependencies:
@@ -4899,7 +4899,7 @@ isomorphic-fetch@^2.1.1, isomorphic-fetch@^2.2.1:
     node-fetch "^1.0.1"
     whatwg-fetch ">=0.10.0"
 
-isomorphic-unfetch@^2.0.0:
+isomorphic-unfetch@2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/isomorphic-unfetch/-/isomorphic-unfetch-2.0.0.tgz#f50140a4c163d7582b5f37f1591968c4f809a645"
   dependencies:
@@ -5228,7 +5228,7 @@ jest-worker@^22.0.3:
   dependencies:
     merge-stream "^1.0.1"
 
-jest@^22.0.4:
+jest@22.0.4:
   version "22.0.4"
   resolved "https://registry.yarnpkg.com/jest/-/jest-22.0.4.tgz#d3cf560ece6b825b115dce80b9826ceb40f87961"
   dependencies:
@@ -5427,7 +5427,7 @@ kind-of@^4.0.0:
   dependencies:
     is-buffer "^1.1.5"
 
-knex@^0.14.2:
+knex@0.14.2:
   version "0.14.2"
   resolved "https://registry.yarnpkg.com/knex/-/knex-0.14.2.tgz#f3b3fe1ea0711af842770100768af21bfcbcbaea"
   dependencies:
@@ -5474,7 +5474,7 @@ left-pad@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/left-pad/-/left-pad-1.2.0.tgz#d30a73c6b8201d8f7d8e7956ba9616087a68e0ee"
 
-lerna-changelog@^0.7.0:
+lerna-changelog@0.7.0:
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/lerna-changelog/-/lerna-changelog-0.7.0.tgz#1994eb655beb82ac5ca4c715d76d301baaffb03b"
   dependencies:
@@ -5488,7 +5488,7 @@ lerna-changelog@^0.7.0:
     string.prototype.padend "^3.0.0"
     yargs "^6.6.0"
 
-lerna@^2.5.1:
+lerna@2.5.1:
   version "2.5.1"
   resolved "https://registry.yarnpkg.com/lerna/-/lerna-2.5.1.tgz#d07099bd3051ee799f98c753328bd69e96c6fab8"
   dependencies:
@@ -6092,7 +6092,7 @@ netrc@^0.1.4:
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/netrc/-/netrc-0.1.4.tgz#6be94fcaca8d77ade0a9670dc460914c94472444"
 
-next@^4.3.0-canary.1:
+next@4.3.0-canary.1:
   version "4.3.0-canary.1"
   resolved "https://registry.yarnpkg.com/next/-/next-4.3.0-canary.1.tgz#3d7314a290eb613d110f3fca3a2b5ef2e171a89d"
   dependencies:
@@ -6228,7 +6228,7 @@ node-pre-gyp@^0.6.39, node-pre-gyp@~0.6.38:
     tar "^2.2.1"
     tar-pack "^3.4.0"
 
-nodemon@^1.14.3:
+nodemon@1.14.3:
   version "1.14.3"
   resolved "https://registry.yarnpkg.com/nodemon/-/nodemon-1.14.3.tgz#f08d66726fb9876d76956b57cc91624793de4dbb"
   dependencies:
@@ -6817,7 +6817,7 @@ pkg-up@2.0.0:
   dependencies:
     find-up "^2.1.0"
 
-pkg@^4.3.0-beta.5:
+pkg@4.3.0-beta.5:
   version "4.3.0-beta.5"
   resolved "https://registry.yarnpkg.com/pkg/-/pkg-4.3.0-beta.5.tgz#865d5432b9a10c143c7ec61b412378d853ac5bc4"
   dependencies:
@@ -6867,7 +6867,7 @@ preserve@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/preserve/-/preserve-0.2.0.tgz#815ed1f6ebc65926f865b310c0713bcb3315ce4b"
 
-prettier@^1.9.2:
+prettier@1.9.2:
   version "1.9.2"
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.9.2.tgz#96bc2132f7a32338e6078aeb29727178c6335827"
 
@@ -7044,7 +7044,7 @@ railroad-diagrams@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/railroad-diagrams/-/railroad-diagrams-1.0.0.tgz#eb7e6267548ddedfb899c1b90e57374559cddb7e"
 
-ramda@^0.25.0:
+ramda@0.25.0:
   version "0.25.0"
   resolved "https://registry.yarnpkg.com/ramda/-/ramda-0.25.0.tgz#8fdf68231cffa90bc2f9460390a0cb74a29b29a9"
 
@@ -7097,11 +7097,11 @@ rc@^1.0.1, rc@^1.1.6, rc@^1.1.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-addons-test-utils@^15.6.2:
+react-addons-test-utils@15.6.2:
   version "15.6.2"
   resolved "https://registry.yarnpkg.com/react-addons-test-utils/-/react-addons-test-utils-15.6.2.tgz#c12b6efdc2247c10da7b8770d185080a7b047156"
 
-react-apollo@^2.0.4:
+react-apollo@2.0.4:
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/react-apollo/-/react-apollo-2.0.4.tgz#01dd32a8e388672f5d7385b21cdd0b94009ee9ee"
   dependencies:
@@ -7116,7 +7116,7 @@ react-deep-force-update@^2.1.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/react-deep-force-update/-/react-deep-force-update-2.1.1.tgz#8ea4263cd6455a050b37445b3f08fd839d86e909"
 
-react-dom@^16.2.0:
+react-dom@16.2.0:
   version "16.2.0"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.2.0.tgz#69003178601c0ca19b709b33a83369fe6124c044"
   dependencies:
@@ -7150,7 +7150,7 @@ react-reconciler@^0.7.0:
     object-assign "^4.1.1"
     prop-types "^15.6.0"
 
-react-test-renderer@^16.0.0-0, react-test-renderer@^16.2.0:
+react-test-renderer@16.2.0, react-test-renderer@^16.0.0-0:
   version "16.2.0"
   resolved "https://registry.yarnpkg.com/react-test-renderer/-/react-test-renderer-16.2.0.tgz#bddf259a6b8fcd8555f012afc8eacc238872a211"
   dependencies:
@@ -7158,7 +7158,7 @@ react-test-renderer@^16.0.0-0, react-test-renderer@^16.2.0:
     object-assign "^4.1.1"
     prop-types "^15.6.0"
 
-react@^16.2.0:
+react@16.2.0:
   version "16.2.0"
   resolved "https://registry.yarnpkg.com/react/-/react-16.2.0.tgz#a31bd2dab89bff65d42134fa187f24d054c273ba"
   dependencies:
@@ -7884,7 +7884,7 @@ sprintf-js@~1.0.2:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/sprintf-js/-/sprintf-js-1.0.3.tgz#04e6926f662895354f3dd015203633b857297e2c"
 
-sqlite3@^3.1.13:
+sqlite3@3.1.13:
   version "3.1.13"
   resolved "https://registry.yarnpkg.com/sqlite3/-/sqlite3-3.1.13.tgz#d990a05627392768de6278bafd1a31fdfe907dd9"
   dependencies:
@@ -8109,7 +8109,7 @@ stylis@3.4.5:
   version "3.4.5"
   resolved "https://registry.yarnpkg.com/stylis/-/stylis-3.4.5.tgz#d7b9595fc18e7b9c8775eca8270a9a1d3e59806e"
 
-subscriptions-transport-ws@^0.9.4:
+subscriptions-transport-ws@0.9.4, subscriptions-transport-ws@^0.9.4:
   version "0.9.4"
   resolved "https://registry.yarnpkg.com/subscriptions-transport-ws/-/subscriptions-transport-ws-0.9.4.tgz#2671c7339c17389c0ff47c73cd749949576d3dd5"
   dependencies:
