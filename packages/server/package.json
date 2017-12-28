@@ -28,21 +28,21 @@
   },
   "dependencies": {
     "@todomvc-subscriptions/constants": "^1.0.0",
-    "dotenv": "^4.0.0",
-    "graphql-yoga": "^0.4.7",
-    "knex": "^0.14.2",
-    "ramda": "^0.25.0",
-    "sqlite3": "^3.1.13"
+    "dotenv": "4.0.0",
+    "graphql-yoga": "0.4.7",
+    "knex": "0.14.2",
+    "ramda": "0.25.0",
+    "sqlite3": "3.1.13"
   },
   "devDependencies": {
-    "@babel/cli": "^7.0.0-beta.36",
-    "@babel/core": "^7.0.0-beta.36",
-    "@babel/node": "^7.0.0-beta.36",
-    "@babel/preset-env": "^7.0.0-beta.36",
-    "babel-plugin-add-module-exports": "^0.2.1",
-    "flow-bin": "^0.61.0",
-    "nodemon": "^1.14.3",
-    "pkg": "^4.3.0-beta.5"
+    "@babel/cli": "7.0.0-beta.36",
+    "@babel/core": "7.0.0-beta.36",
+    "@babel/node": "7.0.0-beta.36",
+    "@babel/preset-env": "7.0.0-beta.36",
+    "babel-plugin-add-module-exports": "0.2.1",
+    "flow-bin": "0.61.0",
+    "nodemon": "1.14.3",
+    "pkg": "4.3.0-beta.5"
   },
   "babel": {
     "presets": [
