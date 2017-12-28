@@ -8,6 +8,7 @@ export const TODOS_QUERY = gql`
       title
       completed
     }
+    filter @client
   }
 `;
 
