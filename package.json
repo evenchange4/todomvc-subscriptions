@@ -13,7 +13,8 @@
     "eslint": "eslint ./",
     "format": "prettier --write 'packages/**/*.{js,json}' '*.json' '*.md'",
     "release": "lerna publish",
-    "changelog": "lerna-changelog"
+    "changelog":
+      "github-changes -o evenchange4 -r todomvc-subscriptions -b master -f ./CHANGELOG.md --order-semver --use-commit-body"
   },
   "workspaces": ["packages/*"],
   "devDependencies": {
@@ -29,8 +30,8 @@
     "eslint-plugin-prettier": "2.4.0",
     "eslint-plugin-react": "7.5.1",
     "flow-bin": "0.61.0",
+    "github-changes": "1.1.1",
     "lerna": "2.5.1",
-    "lerna-changelog": "0.7.0",
     "prettier": "1.9.2"
   },
   "prettier": {
