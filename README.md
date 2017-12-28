@@ -19,6 +19,16 @@ Looking for a modern technology stack for my next project in 2018. Any suggestio
 
 ![techstack](./docs/techstack.png)
 
+## Development
+
+* node >= 9.3.0
+* yarn >= 1.3.2
+
+```cmd
+$ yarn install
+$ yarn start
+```
+
 ## Todo
 
 * [ ] jest

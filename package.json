@@ -8,6 +8,7 @@
     "clean":
       "rm -rf node_modules && rm -rf ./packages/*/node_modules && rm -rf ./packages/*/.DS_Store && rm -rf ./packages/*/*.log",
     "postinstall": "lerna link",
+    "start": "lerna run dev --stream",
     "flow": "flow",
     "eslint": "eslint ./",
     "format": "prettier --write 'packages/**/*.{js,json}' '*.json' '*.md'",
