@@ -19,6 +19,11 @@ Looking for a modern technology stack for my next project in 2018. Any suggestio
 
 ![techstack](./docs/techstack.png)
 
+## Further Readings:
+
+1. GraphQL - JavaScript Fullstack Solution [\[Slide\]](https://speakerdeck.com/evenchange4/graphql-javascript-fullstack-solution)
+2. [2018 GraphQL 漸進式導入的架構](https://medium.com/@evenchange4/2018-graphql-漸進式導入的架構-aeb2603f2223)
+
 ## Development
 
 * node >= 9.3.0
