@@ -43,7 +43,7 @@
   },
   "devDependencies": {
     "apollo-link-schema": "1.0.1",
-    "enzyme": "3.2.0",
+    "enzyme": "3.3.0",
     "enzyme-adapter-react-16": "1.1.1",
     "enzyme-to-json": "3.3.0",
     "flow-bin": "0.61.0",
