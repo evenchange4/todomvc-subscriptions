@@ -6085,9 +6085,9 @@ netrc@^0.1.4:
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/netrc/-/netrc-0.1.4.tgz#6be94fcaca8d77ade0a9670dc460914c94472444"
 
-next@4.3.0-canary.1:
-  version "4.3.0-canary.1"
-  resolved "https://registry.yarnpkg.com/next/-/next-4.3.0-canary.1.tgz#3d7314a290eb613d110f3fca3a2b5ef2e171a89d"
+next@4.4.0-canary.3:
+  version "4.4.0-canary.3"
+  resolved "https://registry.yarnpkg.com/next/-/next-4.4.0-canary.3.tgz#0412b40076fb2b83934fc25862ef7ccf6964da57"
   dependencies:
     ansi-html "0.0.7"
     babel-core "6.26.0"
