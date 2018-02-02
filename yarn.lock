@@ -832,11 +832,11 @@ apollo-link-schema@1.0.1:
   dependencies:
     apollo-link "^1.0.6"
 
-apollo-link-state@0.3.0:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/apollo-link-state/-/apollo-link-state-0.3.0.tgz#201197ff29a9168134c0754889f443de9917ae89"
+apollo-link-state@0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/apollo-link-state/-/apollo-link-state-0.4.0.tgz#916dab5fa4ecc18d99dd9664b1d22476f4b280a6"
   dependencies:
-    apollo-utilities "^1.0.1"
+    apollo-utilities "^1.0.6"
     graphql-anywhere "^4.1.0-alpha.0"
 
 apollo-link-ws@1.0.4:
@@ -888,6 +888,10 @@ apollo-upload-server@^4.0.0-alpha.1:
 apollo-utilities@1.0.3, apollo-utilities@^1.0.0, apollo-utilities@^1.0.1, apollo-utilities@^1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/apollo-utilities/-/apollo-utilities-1.0.3.tgz#bf435277609850dd442cf1d5c2e8bc6655eaa943"
+
+apollo-utilities@^1.0.6:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/apollo-utilities/-/apollo-utilities-1.0.6.tgz#7bfd7a702b5225c9a4591fe28c5899d9b5f08889"
 
 append-transform@^0.4.0:
   version "0.4.0"
