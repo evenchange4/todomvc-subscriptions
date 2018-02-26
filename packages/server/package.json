@@ -28,7 +28,7 @@
   },
   "dependencies": {
     "@todomvc-subscriptions/constants": "^1.0.0",
-    "dotenv": "4.0.0",
+    "dotenv": "5.0.1",
     "graphql-yoga": "0.4.7",
     "knex": "0.14.2",
     "ramda": "0.25.0",
