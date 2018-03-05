@@ -3960,9 +3960,9 @@ gitconfiglocal@^1.0.0:
   dependencies:
     ini "^1.3.2"
 
-github-changes@1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/github-changes/-/github-changes-1.1.1.tgz#f10152ddb084f560975d97b4bfd839b75f371624"
+github-changes@1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/github-changes/-/github-changes-1.1.2.tgz#0411c1995dd73541a3b0b9cd341073613d02120b"
   dependencies:
     bluebird "1.0.3"
     ghauth "3.0.0"
@@ -3972,7 +3972,7 @@ github-changes@1.1.1:
     moment-timezone "0.5.5"
     nomnom "1.6.2"
     parse-link-header "0.1.0"
-    semver "2.2.1"
+    semver "5.4.1"
 
 github-commit-stream@0.1.0:
   version "0.1.0"
@@ -7664,10 +7664,6 @@ semver-diff@^2.0.0:
 "semver@2 || 3 || 4":
   version "4.3.6"
   resolved "https://registry.yarnpkg.com/semver/-/semver-4.3.6.tgz#300bc6e0e86374f7ba61068b5b1ecd57fc6532da"
-
-semver@2.2.1:
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/semver/-/semver-2.2.1.tgz#7941182b3ffcc580bff1c17942acdf7951c0d213"
 
 send@0.16.1:
   version "0.16.1"
