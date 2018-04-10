@@ -47,7 +47,7 @@
     "enzyme-adapter-react-16": "1.1.1",
     "enzyme-to-json": "3.3.0",
     "flow-bin": "0.61.0",
-    "graphql-tools": "2.14.1",
+    "graphql-tools": "2.24.0",
     "jest": "22.0.4",
     "react-addons-test-utils": "15.6.2",
     "react-test-renderer": "16.2.0"
