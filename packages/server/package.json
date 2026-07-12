@@ -30,7 +30,7 @@
     "@todomvc-subscriptions/constants": "^1.0.0",
     "dotenv": "4.0.0",
     "graphql-yoga": "0.4.7",
-    "knex": "0.14.2",
+    "knex": "2.4.0",
     "ramda": "0.25.0",
     "sqlite3": "3.1.13"
   },
